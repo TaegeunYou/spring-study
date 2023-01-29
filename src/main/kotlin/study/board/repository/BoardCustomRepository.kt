@@ -1,4 +1,7 @@
 package study.board.repository
 
-class BoardCustomRepository: BoardRepository {
+interface BoardCustomRepository {
+
+    fun findFirst(): Long?
+
 }

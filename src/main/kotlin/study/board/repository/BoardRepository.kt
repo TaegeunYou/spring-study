@@ -1,12 +1,6 @@
 package study.board.repository
 
-import study.board.dto.query.InsertBoardQDto
+import org.springframework.data.jpa.repository.JpaRepository
+import study.board.entity.BoardEntity
 
-
-interface BoardRepository {
-
-    fun insert(a: InsertBoardQDto) {
-
-    }
-
-}
+interface BoardRepository: JpaRepository<BoardEntity, Long>, BoardCustomRepository
